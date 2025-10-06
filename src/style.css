@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --breakpoint-xs: 320px;
+
+    --color-primary: #06b6d4;
+    --color-primaryLite: #e0f2fe;
+    --color-primaryHard: #083344;
+    --color-secondary: #22c55e;
+    --color-secondaryLite: #dcfce7;
+    --color-secondaryHard: #052e16;
+    --color-error: #ef4444;
+    --color-errorLite: #fee2e2;
+    --color-errorHard: #450a0a;
+    --color-outline: #64748b;
+    --color-outlineLite: #f1f5f9;
+    --color-outlineHard: #020617;
+    --color-surface: #fafafa;
+}
+
+
+@layer base {
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    section[id] {
+        scroll-margin-top: 100px;
+    }
+
+    /* Headline Large (Title for Landing) 4xl */
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        white-space: pre-wrap;
+    }
+
+    /* Subtitle for leading 3xl */
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        white-space: pre-wrap;
+    }
+
+    /* Title large (presentation) text-2xl*/
+    h3 {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        /* Font regular */
+        white-space: pre-wrap;
+    }
+
+    /* Title medium (Title for Card) text-xl*/
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        font-weight: 500;
+        /* Medium */
+        white-space: pre-wrap;
+    }
+
+    /* Label Large text-lg text for buttons*/
+    h5 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+        /* Medium */
+        /* font-weight: 600; /* bold */
+        white-space: pre-wrap;
+    }
+
+    /* Normal and Subtitle for card */
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        font-weight: 400;
+        white-space: pre-wrap;
+    }
+
+    small {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        font-weight: 400;
+        white-space: pre-wrap;
+    }
+}
+
+@layer utilities {
+
+    /* Tamaño de texto */
+    /* Body small, texto más pequeo */
+    .text-xs {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        font-weight: 400;
+    }
+
+    /* Normal Text and subtitle for card */
+    .text-base {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        font-weight: 400;
+    }
+
+    /* label large (Buttons) */
+    .text-lg {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+    }
+
+    /* Title medium (title de card y también texto como para chats) */
+    .text-xl {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        font-weight: 500;
+    }
+
+    /* Title large (presentation) */
+    .text-2xl {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        font-weight: 400;
+    }
+
+    /* Headline medium (Subtitle for landing) */
+    .text-3xl {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        font-weight: 400;
+    }
+
+    /* Headline Large (Title for landing) */
+    .text-4xl {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        font-weight: 400;
+    }
+}
