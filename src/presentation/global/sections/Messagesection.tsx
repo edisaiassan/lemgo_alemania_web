@@ -7,7 +7,7 @@ import { refresh } from '../constants/icons'
 type MessageSectionType = {
     onClick?: React.MouseEventHandler<HTMLButtonElement>,
     message: string,
-    lottie?: string,
+    lottie?: object,
     className?: string,
 }
 
