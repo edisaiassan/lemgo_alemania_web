@@ -42,11 +42,11 @@ export const QuickQueryPage = () => {
                   <div className='flex gap-2'>
                     <IconButton
                       onPress={onClearSearchText}
-                      path={clear}
+                      icon={<Icon path={clear}/>}
                       type={IconButtonType.simple}
                     />
                     <IconButton
-                      path={search}
+                      icon={<Icon path={search}/>}
                       onPress={onSearch}
                     />
                   </div>)
